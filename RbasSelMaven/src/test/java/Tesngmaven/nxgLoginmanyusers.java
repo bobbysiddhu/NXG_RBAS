@@ -45,7 +45,6 @@ public class nxgLoginmanyusers {
 				/*System.setProperty("webdriver.chrome.driver","C:\\Raje\\Java\\chromedriver.exe");*/
 				WebDriver driver = new ChromeDriver();
 
-				
 				/*driver.manage().window().maximize();*/
 				driver.manage().deleteAllCookies();
 				
@@ -72,10 +71,10 @@ public class nxgLoginmanyusers {
 				   	
 				   	username.clear();
 				   	username.sendKeys(loginId);
-					driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+					/*driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);*/
 				   	lockword.clear();
 				   	lockword.sendKeys(passWord);
-					driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+					/*driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);*/
 				    driver.findElement(By.id("ctl00_Content_SerLogin_btn_Login_Login")).click();
 					driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 				 		  	   		

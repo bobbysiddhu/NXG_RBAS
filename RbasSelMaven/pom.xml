@@ -127,7 +127,7 @@
 				    <version>3.0.0-M2</version>
 					<configuration>
 						<suiteXmlFiles>
-							<suiteXmlFile>testng1.xml</suiteXmlFile>
+							<suiteXmlFile>${testngfile}</suiteXmlFile>
 						</suiteXmlFiles>
 					</configuration>
 				</plugin>
