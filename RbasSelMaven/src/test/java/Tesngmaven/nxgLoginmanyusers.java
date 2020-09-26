@@ -42,7 +42,7 @@ public class nxgLoginmanyusers {
 		@Test
 		public void nxgloginURL() {
 										
-				System.setProperty("webdriver.chrome.driver","C:\\Raje\\Java\\chromedriver.exe");
+				/*System.setProperty("webdriver.chrome.driver","C:\\Raje\\Java\\chromedriver.exe");*/
 				WebDriver driver = new ChromeDriver();
 
 				
