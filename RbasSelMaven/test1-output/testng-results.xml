@@ -2,40 +2,40 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-09-26T18:56:15 CEST" name="Suite" finished-at="2020-09-26T18:56:24 CEST" duration-ms="9095">
+  <suite started-at="2020-09-28T23:38:59 CEST" name="Default suite" finished-at="2020-09-28T23:39:09 CEST" duration-ms="10136">
     <groups>
     </groups>
-    <test started-at="2020-09-26T18:56:15 CEST" name="Test" finished-at="2020-09-26T18:56:24 CEST" duration-ms="9095">
-      <class name="Tesngmaven.nxgmanyURLTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:Tesngmaven.nxgmanyURLTest@703580bf]" started-at="2020-09-26T18:56:15 CEST" name="setup" finished-at="2020-09-26T18:56:15 CEST" duration-ms="5" status="PASS">
+    <test started-at="2020-09-28T23:38:59 CEST" name="Default test" finished-at="2020-09-28T23:39:09 CEST" duration-ms="10136">
+      <class name="Tesngmaven.nxgsmoketest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Tesngmaven.nxgsmoketest@703580bf]" started-at="2020-09-28T23:38:59 CEST" name="setup" finished-at="2020-09-28T23:38:59 CEST" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="login()[pri:0, instance:Tesngmaven.nxgmanyURLTest@703580bf]" started-at="2020-09-26T18:56:15 CEST" name="login" finished-at="2020-09-26T18:56:15 CEST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="login()[pri:0, instance:Tesngmaven.nxgsmoketest@703580bf]" started-at="2020-09-28T23:38:59 CEST" name="login" finished-at="2020-09-28T23:38:59 CEST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method is-config="true" signature="beforlaunchbrowser()[pri:0, instance:Tesngmaven.nxgmanyURLTest@703580bf]" started-at="2020-09-26T18:56:15 CEST" name="beforlaunchbrowser" finished-at="2020-09-26T18:56:15 CEST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="beforlaunchbrowser()[pri:0, instance:Tesngmaven.nxgsmoketest@703580bf]" started-at="2020-09-28T23:38:59 CEST" name="beforlaunchbrowser" finished-at="2020-09-28T23:38:59 CEST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforlaunchbrowser -->
-        <test-method signature="nxgmanyUrlTest()[pri:0, instance:Tesngmaven.nxgmanyURLTest@703580bf]" started-at="2020-09-26T18:56:15 CEST" name="nxgmanyUrlTest" finished-at="2020-09-26T18:56:24 CEST" duration-ms="9078" status="PASS">
+        <test-method signature="nxgloginfromportal()[pri:0, instance:Tesngmaven.nxgsmoketest@703580bf]" started-at="2020-09-28T23:38:59 CEST" name="nxgloginfromportal" finished-at="2020-09-28T23:39:09 CEST" duration-ms="10115" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- nxgmanyUrlTest -->
-        <test-method is-config="true" signature="closebrowser()[pri:0, instance:Tesngmaven.nxgmanyURLTest@703580bf]" started-at="2020-09-26T18:56:24 CEST" name="closebrowser" finished-at="2020-09-26T18:56:24 CEST" duration-ms="0" status="PASS">
+        </test-method> <!-- nxgloginfromportal -->
+        <test-method is-config="true" signature="closebrowser()[pri:0, instance:Tesngmaven.nxgsmoketest@703580bf]" started-at="2020-09-28T23:39:09 CEST" name="closebrowser" finished-at="2020-09-28T23:39:09 CEST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closebrowser -->
-        <test-method is-config="true" signature="deleteallCookies()[pri:0, instance:Tesngmaven.nxgmanyURLTest@703580bf]" started-at="2020-09-26T18:56:24 CEST" name="deleteallCookies" finished-at="2020-09-26T18:56:24 CEST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="deleteallCookies()[pri:0, instance:Tesngmaven.nxgsmoketest@703580bf]" started-at="2020-09-28T23:39:09 CEST" name="deleteallCookies" finished-at="2020-09-28T23:39:09 CEST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteallCookies -->
-        <test-method is-config="true" signature="generateTestReport()[pri:0, instance:Tesngmaven.nxgmanyURLTest@703580bf]" started-at="2020-09-26T18:56:24 CEST" name="generateTestReport" finished-at="2020-09-26T18:56:24 CEST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="generateTestReport()[pri:0, instance:Tesngmaven.nxgsmoketest@703580bf]" started-at="2020-09-28T23:39:09 CEST" name="generateTestReport" finished-at="2020-09-28T23:39:09 CEST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generateTestReport -->
-      </class> <!-- Tesngmaven.nxgmanyURLTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+      </class> <!-- Tesngmaven.nxgsmoketest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
