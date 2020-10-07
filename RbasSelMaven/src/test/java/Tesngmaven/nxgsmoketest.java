@@ -42,7 +42,6 @@ public class nxgsmoketest {
   @Test
   public void nxgloginfromportal() throws InterruptedException {
 	  
-	  System.setProperty("webdriver.chrome.driver","C:\\Raje\\Java\\chromedriver.exe");
 	  WebDriver driver = new ChromeDriver();
       driver.manage().deleteAllCookies();
 					   
