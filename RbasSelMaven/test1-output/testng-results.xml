@@ -1,41 +1,106 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-09-29T10:28:32 CEST" name="Default suite" finished-at="2020-09-29T10:28:43 CEST" duration-ms="10590">
+  <suite started-at="2020-10-07T10:36:54 CEST" name="Suite" finished-at="2020-10-07T10:37:02 CEST" duration-ms="7821">
     <groups>
     </groups>
-    <test started-at="2020-09-29T10:28:32 CEST" name="Default test" finished-at="2020-09-29T10:28:43 CEST" duration-ms="10590">
+    <test started-at="2020-10-07T10:36:54 CEST" name="Test" finished-at="2020-10-07T10:37:02 CEST" duration-ms="7821">
       <class name="Tesngmaven.nxgsmoketest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:Tesngmaven.nxgsmoketest@703580bf]" started-at="2020-09-29T10:28:32 CEST" name="setup" finished-at="2020-09-29T10:28:32 CEST" duration-ms="4" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Tesngmaven.nxgsmoketest@703580bf]" started-at="2020-10-07T10:36:54 CEST" name="setup" finished-at="2020-10-07T10:36:54 CEST" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="login()[pri:0, instance:Tesngmaven.nxgsmoketest@703580bf]" started-at="2020-09-29T10:28:32 CEST" name="login" finished-at="2020-09-29T10:28:32 CEST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="login()[pri:0, instance:Tesngmaven.nxgsmoketest@703580bf]" started-at="2020-10-07T10:36:54 CEST" name="login" finished-at="2020-10-07T10:36:54 CEST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method is-config="true" signature="beforlaunchbrowser()[pri:0, instance:Tesngmaven.nxgsmoketest@703580bf]" started-at="2020-09-29T10:28:32 CEST" name="beforlaunchbrowser" finished-at="2020-09-29T10:28:32 CEST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="beforlaunchbrowser()[pri:0, instance:Tesngmaven.nxgsmoketest@703580bf]" started-at="2020-10-07T10:36:54 CEST" name="beforlaunchbrowser" finished-at="2020-10-07T10:36:54 CEST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforlaunchbrowser -->
-        <test-method signature="nxgloginfromportal()[pri:0, instance:Tesngmaven.nxgsmoketest@703580bf]" started-at="2020-09-29T10:28:32 CEST" name="nxgloginfromportal" finished-at="2020-09-29T10:28:43 CEST" duration-ms="10566" status="PASS">
+        <test-method signature="nxgloginfromportal()[pri:0, instance:Tesngmaven.nxgsmoketest@703580bf]" started-at="2020-10-07T10:36:54 CEST" name="nxgloginfromportal" finished-at="2020-10-07T10:37:02 CEST" duration-ms="7798" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=85.0.4183.121)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'NXG-ZKTIFKGYPO1', ip: '192.168.178.26', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.121, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\RAJESW~1.BAS\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:61125}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 52300036dad0a1c6d33b6d44cba5c661]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=85.0.4183.121)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'NXG-ZKTIFKGYPO1', ip: '192.168.178.26', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.121, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\RAJESW~1.BAS\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:61125}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 52300036dad0a1c6d33b6d44cba5c661
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.back(RemoteWebDriver.java:849)
+at Tesngmaven.nxgsmoketest.nxgloginfromportal(nxgsmoketest.java:119)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- nxgloginfromportal -->
-        <test-method is-config="true" signature="closebrowser()[pri:0, instance:Tesngmaven.nxgsmoketest@703580bf]" started-at="2020-09-29T10:28:43 CEST" name="closebrowser" finished-at="2020-09-29T10:28:43 CEST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="closebrowser()[pri:0, instance:Tesngmaven.nxgsmoketest@703580bf]" started-at="2020-10-07T10:37:02 CEST" name="closebrowser" finished-at="2020-10-07T10:37:02 CEST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closebrowser -->
-        <test-method is-config="true" signature="deleteallCookies()[pri:0, instance:Tesngmaven.nxgsmoketest@703580bf]" started-at="2020-09-29T10:28:43 CEST" name="deleteallCookies" finished-at="2020-09-29T10:28:43 CEST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="deleteallCookies()[pri:0, instance:Tesngmaven.nxgsmoketest@703580bf]" started-at="2020-10-07T10:37:02 CEST" name="deleteallCookies" finished-at="2020-10-07T10:37:02 CEST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteallCookies -->
-        <test-method is-config="true" signature="generateTestReport()[pri:0, instance:Tesngmaven.nxgsmoketest@703580bf]" started-at="2020-09-29T10:28:43 CEST" name="generateTestReport" finished-at="2020-09-29T10:28:43 CEST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="generateTestReport()[pri:0, instance:Tesngmaven.nxgsmoketest@703580bf]" started-at="2020-10-07T10:37:02 CEST" name="generateTestReport" finished-at="2020-10-07T10:37:02 CEST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generateTestReport -->
       </class> <!-- Tesngmaven.nxgsmoketest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

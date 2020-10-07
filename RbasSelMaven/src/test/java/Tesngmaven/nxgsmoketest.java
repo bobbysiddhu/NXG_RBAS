@@ -1,5 +1,6 @@
 package Tesngmaven;
 
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -39,7 +40,7 @@ public class nxgsmoketest {
 	  public void deleteallCookies() {
 			System.out.println("Delete all Cookies");	}
   @Test
-  public void nxgloginfromportal() {
+  public void nxgloginfromportal() throws InterruptedException {
 	  
 	  System.setProperty("webdriver.chrome.driver","C:\\Raje\\Java\\chromedriver.exe");
 	  WebDriver driver = new ChromeDriver();
@@ -54,7 +55,9 @@ public class nxgsmoketest {
 	    for(int rowNum=2;rowNum<=rowCount;rowNum++) {
 	    	
 	    	String enviurl= reader.getCellData(sheetName,"URL",rowNum);
-	    	System.out.println("URL :" +enviurl);
+	    	System.out.println("URL :  - " +enviurl);
+	    	String pageTitle = driver.getTitle();
+	    	System.out.println(" Title: -  " + pageTitle );
 	    	
 	    	driver.get(enviurl);
 	    	driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
@@ -77,7 +80,7 @@ public class nxgsmoketest {
 			
 			System.out.println(loginId+"  "+passWord);
 
-		   	System.out.println("User Succesfully logged in "+loginId);
+		   	System.out.println("Succesfully logged in User  "+loginId);
 		
 		   	/* Get First App */
 		   	WebElement APPExists = driver.findElement(By.xpath("//*[@id='ctl00_Content_ser-appmenu2']/div/div/a[1]/div/span"));
@@ -85,29 +88,61 @@ public class nxgsmoketest {
 		/*   	String ANAtxt1 = ANAExists.getAttribute("innerHTML");*/
 		   	System.out.println(ANAtxt);
 		  /* 	System.out.println(ANAtxt1);*/
-
+		   	List<WebElement> applinks= driver.findElements((By.tagName("a")));
+		    for(WebElement objcurrentlink : applinks=driver.findElements((By.tagName("a"))))
+		    	{		String Strlinktext= objcurrentlink.getText();
+		    		if (Strlinktext != null && !Strlinktext.trim().isEmpty())	
+		     	  		{  	System.out.println(Strlinktext);
+		         	driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);}
+		    	}
+		         	
 		   	if(APPExists.getText().equalsIgnoreCase("Analyzer"))
 		   		{
      			 System.out.println( "Analyser is present");  
-     			driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-     		driver.findElement(By.xpath("//div[@id='ctl00_Content_ser-appmenu2']/div/div/a/div/img")).click();
- 			driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-	     	System.out.println("Successfully into Analyzer");
-     		System.out.println("Analyser is opened" );
-     		boolean AnalyzerimgPresence1= driver.findElement(By.xpath("//ul[@id=\"ser-header-link\"]/li[2]/a/i")).isDisplayed();
-     		if  (AnalyzerimgPresence1)
- 			{ System.out.println(loginId + "Analyzer user");
-	     	
-   	 	    	driver.findElement(By.cssSelector(".ser-action-enabled:nth-child(3) > a"));
-     			driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-   	 	     	driver.findElement(By.xpath("//ul[@id='ser-header-link']/li[3]/a"));
-   				driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-   	 	     	driver.findElement(By.xpath("//li[3]/a")).click();
- 			}
-			System.out.println("Successfully out from Analyzer");
-			driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+     		 	 driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+     		 	 driver.findElement(By.xpath("//div[@id='ctl00_Content_ser-appmenu2']/div/div/a/div/img")).click();
+     		 	 driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+     		 	 System.out.println("Successfully into Analyzer");
+     		 	 System.out.println("Analyser is opened" );
+     		 	 boolean AnalyzerimgPresence1= driver.findElement(By.xpath("//ul[@id=\"ser-header-link\"]/li[2]/a/i")).isDisplayed();
+     		 	 if  (AnalyzerimgPresence1)
+     		 	 	{ System.out.println(loginId + "Analyzer user");
+     		 	 		driver.findElement(By.cssSelector(".ser-action-enabled:nth-child(3) > a"));
+     		 	 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+     		 	 		driver.findElement(By.xpath("//ul[@id='ser-header-link']/li[3]/a"));
+     		 	 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+     		 	 		driver.findElement(By.xpath("//li[3]/a")).click();
+     		 	 		driver.close();
+     		 	 	}
+     		 	 System.out.println("Successfully out from Analyzer");
+     		 	 driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+     		 	 driver.navigate().back();
+     		 	 String currentURL = driver.getCurrentUrl();
+     		 	System.out.println("Current url is " +currentURL );
+     		 	Thread.sleep(2000);
      			}
-		
+		   	if (driver.findElement(By.xpath("//*[@id=\'ctl00_Content_ser-appmenu2\']/div/div/a[15]/div/span")).getText().equalsIgnoreCase("WebAdmin"))
+	   		{
+    			 System.out.println( "WebAdmin is present");  
+    		 	 driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS); 
+    		 	 
+    		 	 driver.findElement(By.xpath("//div[@id=\"ctl00_Content_ser-appmenu2\"]/div/div/a[15]/div/img")).click();
+    		 	 driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+    		 	 boolean AdmPresence1= driver.findElement(By.xpath("//ul[@id=\"ser-header-link\"]/li[2]/a/i")).isDisplayed();
+    		 	 if  (AdmPresence1)
+    		 	 	{ System.out.println(loginId + "WebAdmin user");
+    		 	 	driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+    		 	 	WebElement logoutfound =  driver.findElement(By.cssSelector(".fa.fa-sign-out.ser-icon-default"));
+    		 	 		logoutfound.click();
+    		 	 	}
+    		 	 System.out.println("Successfully out from Webadmin");
+    		 	 driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+     		 	 driver.navigate().back();
+     		 	 String currentURL = driver.getCurrentUrl();
+     		 	System.out.println("Current url is " +currentURL );
+     		 	Thread.sleep(2000);
+     		 	driver.close();
+    			}
 	     	else {
 	     		System.out.println("NO Analyzer");
 	     	 	driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
