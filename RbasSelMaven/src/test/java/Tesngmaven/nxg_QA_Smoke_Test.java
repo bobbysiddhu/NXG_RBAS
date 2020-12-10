@@ -41,7 +41,8 @@ public class nxg_QA_Smoke_Test {
   @Test
   public void nxgloginfromportal() throws InterruptedException {
 				   
-      System.setProperty("webdriver.chrome.driver","C:\\Raje\\Java\\chromedriver_win32 (3)\\chromedriver.exe");
+        /*  System.setProperty("webdriver.chrome.driver","C:\\Raje\\Java\\chromedriver_win32 (3)\\chromedriver.exe");*/
+	  System.setProperty("webdriver.chrome.driver","C:/Raje/Java/chromedriver_win32 (3)/chromedriver.exe");
 		 WebDriver driver=new ChromeDriver();
 		 driver.get("https://qa.serenatalab.com/nethotel/login.aspx?goto=/nethotel/home.aspx");
 		 System.out.println(driver.getTitle());
