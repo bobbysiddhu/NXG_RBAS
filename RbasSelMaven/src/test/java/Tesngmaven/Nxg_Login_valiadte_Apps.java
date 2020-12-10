@@ -7,6 +7,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
@@ -17,7 +18,7 @@ import org.testng.annotations.Test;
 
 import Selenium.Xls_Reader;
 
-public class nxgsmoketest {
+public class Nxg_Login_valiadte_Apps {
 	 @BeforeSuite
 	  public void setup() {
 			System.out.println("Setup system property for chrome");	}
@@ -98,7 +99,7 @@ public class nxgsmoketest {
 		    	{		String Strlinktext= objcurrentlink.getText();
 		    		if (Strlinktext != null && !Strlinktext.trim().isEmpty())	
 		     	  		{  	System.out.println(Strlinktext);
-		     	  	     	  		
+		     	  	     	Assert.assertEquals("Analyzer",Strlinktext);  		
 		     	  		
 		         	driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);}
 		    	}
@@ -113,7 +114,7 @@ public class nxgsmoketest {
      		 	 System.out.println("Analyser is opened" );
      		 	 boolean AnalyzerimgPresence1= driver.findElement(By.xpath("//ul[@id=\"ser-header-link\"]/li[2]/a/i")).isDisplayed();
      		 	 if  (AnalyzerimgPresence1)
-     		 	 	{ System.out.println(loginId + "  Analyzer user");
+     		 	 	{ System.out.println(loginId + "Analyzer user");
      		 	 		driver.findElement(By.cssSelector(".ser-action-enabled:nth-child(3) > a"));
      		 	 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
      		 	 		driver.findElement(By.xpath("//ul[@id='ser-header-link']/li[3]/a"));

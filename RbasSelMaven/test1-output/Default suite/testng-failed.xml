@@ -3,17 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Tesngmaven.nxgsmoketest">
+      <class name="Tesngmaven.nxgmanyURLTest">
         <methods>
+          <include name="deleteallCookies"/>
+          <include name="beforlaunchbrowser"/>
+          <include name="generateTestReport"/>
           <include name="login"/>
           <include name="closebrowser"/>
-          <include name="nxgloginfromportal"/>
-          <include name="deleteallCookies"/>
-          <include name="generateTestReport"/>
-          <include name="beforlaunchbrowser"/>
+          <include name="nxgmanyUrlTest"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- Tesngmaven.nxgsmoketest -->
+      </class> <!-- Tesngmaven.nxgmanyURLTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

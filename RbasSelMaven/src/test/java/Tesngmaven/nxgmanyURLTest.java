@@ -61,6 +61,7 @@ public class nxgmanyURLTest {
     	
     	String enviurl= reader.getCellData(sheetName,"URL",rowNum);
     	System.out.println("URL :" +enviurl);
+    	
 
     	driver.get(enviurl);
     	driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
