@@ -13,7 +13,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-
+import Selenium.LaunchChrome;
 import Selenium.Xls_Reader;
 
 public class nxgmanyURLTest {
@@ -43,7 +43,8 @@ public class nxgmanyURLTest {
 
   @Test
   public void nxgmanyUrlTest() {
-      
+	  
+	   /*System.setProperty("webdriver.chrome.driver","C:\\Raje\\Java\\chromedriver_win32 (3)\\chromedriver.exe");*/
 	WebDriver driver = new ChromeDriver();
 	
 	driver.manage().timeouts().pageLoadTimeout(5,TimeUnit.SECONDS);
