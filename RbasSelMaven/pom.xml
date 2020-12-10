@@ -127,7 +127,7 @@
 				    <version>3.0.0-M2</version>
 					<configuration>
 						<suiteXmlFiles>
-							<suiteXmlFile>${testngfile}</suiteXmlFile>
+							<suiteXmlFile>NXG_QA_Smoke_Test.xml</suiteXmlFile>
 						</suiteXmlFiles>
 					</configuration>
 				</plugin>

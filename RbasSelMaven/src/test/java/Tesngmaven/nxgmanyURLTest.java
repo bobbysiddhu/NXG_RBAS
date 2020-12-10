@@ -45,8 +45,6 @@ public class nxgmanyURLTest {
   public void nxgmanyUrlTest() {
       
 	WebDriver driver = new ChromeDriver();
-
-	driver.manage().deleteAllCookies();
 	
 	driver.manage().timeouts().pageLoadTimeout(5,TimeUnit.SECONDS);
 	driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
@@ -64,7 +62,7 @@ public class nxgmanyURLTest {
     	
 
     	driver.get(enviurl);
-    	driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+    	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
       	      	
 		
     	WebElement username=driver.findElement(By.id("ctl00_Content_SerLogin_user"));
